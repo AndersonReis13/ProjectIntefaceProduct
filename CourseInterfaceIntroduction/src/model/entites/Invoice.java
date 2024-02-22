@@ -31,7 +31,7 @@ public class Invoice {
 	}
 	
 	public Double getTotalBalance() {
-		return getBasicPayment() - getTax();
+		return getBasicPayment() + getTax();
 	}
 	
 	

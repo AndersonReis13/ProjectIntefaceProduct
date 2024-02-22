@@ -35,9 +35,13 @@ public class Project {
 
 		
 		RentalService rs = new RentalService(pricePerHour, pricePerDay, new BrazilTaxService());
+		
 		rs.processInvoice(cr);
 		
-		
+		System.out.println("Invoice: ");
+		System.out.println("Basic payment: " + String.format("%.2f", cr.getInvoice().getBasicPayment()));
+		System.out.println("Tax: " + String.format("%.2f", cr.getInvoice().getTax()));
+		System.out.println("Total payment: " + String.format("%.2f", cr.getInvoice().getTotalBalance()));
 		
 		
 		

@@ -1,6 +1,5 @@
 package model.entites;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class CarRental {
@@ -51,6 +50,16 @@ public class CarRental {
 
 	public void setVehicles(Vehicles vehicles) {
 		this.vehicles = vehicles;
+	}
+
+
+	public Invoice getInvoice() {
+		return invoice;
+	}
+
+
+	public void setInvoice(Invoice invoice) {
+		this.invoice = invoice;
 	}
 	
 	
